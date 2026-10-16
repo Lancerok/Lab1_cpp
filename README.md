@@ -27,6 +27,7 @@
 
 
 
+
 ## Задача 3
 
 ### Текст задачи
@@ -73,7 +74,7 @@
 | 9              | false               |
 
 <img width="278" height="60" alt="image" src="https://github.com/user-attachments/assets/2e6f5f23-1c3e-4bf0-9eea-f5d264f30737" />
-
+<br/>
 <img width="176" height="42" alt="image" src="https://github.com/user-attachments/assets/09b1a8c6-c17c-4c70-9e77-0fd04ea2221f" />
 
 
