@@ -1,4 +1,4 @@
-# Сальников Михаил Группа ЛА-2 Лабораторная №1
+<img width="274" height="65" alt="image" src="https://github.com/user-attachments/assets/ab77fbe5-8592-4bdb-aca4-65a84f0ab6b1" /># Сальников Михаил Группа ЛА-2 Лабораторная №1
 
 # Задание 1
 
@@ -23,7 +23,9 @@
 | -3.7           | -0.7                |
 | 10.0           | 0.0                 |
 
-*[Место для скриншота результата работы программы]*
+<img width="274" height="65" alt="image" src="https://github.com/user-attachments/assets/4c5eb031-ab71-47c9-87de-8cc41a9a5344" />
+
+
 
 ## Задача 3
 
