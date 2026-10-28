@@ -102,7 +102,8 @@
 | 2, 15, 33                  | false               |
 | 10, 10, 10                 | true                |
 
-*[Место для скриншота результата работы программы]*
+<img width="281" height="64" alt="image" src="https://github.com/user-attachments/assets/6732f78e-7f5e-481d-9e64-2c37ee710cbf" />
+
 
 ## Задача 9
 
