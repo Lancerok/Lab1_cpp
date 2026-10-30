@@ -102,7 +102,11 @@
 | 2, 15, 33                  | false               |
 | 10, 10, 10                 | true                |
 
-<img width="281" height="64" alt="image" src="https://github.com/user-attachments/assets/6732f78e-7f5e-481d-9e64-2c37ee710cbf" />
+<img width="275" height="95" alt="image" src="https://github.com/user-attachments/assets/3338258f-47f4-47b1-b976-8e4d01231efb" />
+<br/>
+<img width="284" height="94" alt="image" src="https://github.com/user-attachments/assets/1e36df38-9b7b-4e93-a827-d6de91be6094" />
+
+
 
 
 ## Задача 9
@@ -126,7 +130,10 @@
 | 2, 15, 2                 | false               |
 | 0, 0, 0                  | true                |
 
-*[Место для скриншота результата работы программы]*
+<img width="281" height="70" alt="image" src="https://github.com/user-attachments/assets/154e3394-914d-417b-b0d7-95ef2aead410" />
+<br/>
+<img width="275" height="62" alt="image" src="https://github.com/user-attachments/assets/9d2eb558-7370-4feb-8845-808dccc6dda2" />
+
 
 # Задание 2
 
