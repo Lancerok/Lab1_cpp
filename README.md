@@ -157,7 +157,11 @@
 | -3             | 3                   |
 | 0              | 0                   |
 
-*[Место для скриншота результата работы программы]*
+<img width="272" height="63" alt="image" src="https://github.com/user-attachments/assets/29f6c756-a189-452b-8cef-3db3826a316a" />
+<br/>
+<img width="314" height="65" alt="image" src="https://github.com/user-attachments/assets/3c58517c-ba52-4862-9221-6e634193a24c" />
+
+
 
 ## Задача 3
 
@@ -182,7 +186,10 @@
 | 15             | false               |
 | 9              | true                |
 
-*[Место для скриншота результата работы программы]*
+<img width="279" height="66" alt="image" src="https://github.com/user-attachments/assets/8b0580a3-8d99-4f1c-bf77-2be314cca17c" />
+<br/>
+<img width="277" height="64" alt="image" src="https://github.com/user-attachments/assets/92cab59a-9437-491f-9c2d-02e0b015e75f" />
+
 
 ## Задача 5
 
@@ -207,7 +214,8 @@
 | 8, -1, 4                 | 8                   |
 | -10, -5, -20             | -5                  |
 
-*[Место для скриншота результата работы программы]*
+<img width="275" height="61" alt="image" src="https://github.com/user-attachments/assets/f7cbf0e4-6f3a-4be2-9961-9c50ac33f771" />
+
 
 ## Задача 7
 
@@ -230,7 +238,11 @@
 | 8, -1                 | 7                   |
 | 10, 5                 | 20                  |
 
-*[Место для скриншота результата работы программы]*
+<img width="273" height="61" alt="image" src="https://github.com/user-attachments/assets/6e5bec46-677c-4b6d-8347-015144bf6f90" />
+<br/>
+<img width="275" height="63" alt="image" src="https://github.com/user-attachments/assets/22db1d46-ffcd-4cb2-9c6b-13a9d22a514d" />
+
+
 
 ## Задача 9
 
@@ -254,7 +266,8 @@
 | 7              | "воскресенье"           |
 | 10             | "это не день недели"    |
 
-*[Место для скриншота результата работы программы]*
+<img width="274" height="63" alt="image" src="https://github.com/user-attachments/assets/346570c4-816e-4541-8f92-cbd2e9ef57a5" />
+
 
 # Задание 3
 
@@ -279,7 +292,8 @@
 | 0              | "0"                   |
 | 3              | "0 1 2 3"             |
 
-*[Место для скриншота результата работы программы]*
+<img width="273" height="65" alt="image" src="https://github.com/user-attachments/assets/f5e515c6-c1cd-47b6-8dcf-24abfe7372fc" />
+
 
 ## Задача 3
 
@@ -304,7 +318,8 @@
 | 10             | "0 2 4 6 8 10"      |
 | 1              | "0"                 |
 
-*[Место для скриншота результата работы программы]*
+<img width="286" height="59" alt="image" src="https://github.com/user-attachments/assets/6c040026-9b89-49e1-8300-45ea0c734331" />
+
 
 ## Задача 5
 
@@ -328,7 +343,8 @@
 | 0              | 1                   |
 | -456           | 3                   |
 
-*[Место для скриншота результата работы программы]*
+<img width="272" height="59" alt="image" src="https://github.com/user-attachments/assets/7e64f00f-b922-47fb-abdc-8985f4074bd6" />
+
 
 ## Задача 7
 
@@ -352,7 +368,8 @@
 | 2              | Квадрат 2x2 из '*'  |
 | 4              | Квадрат 4x4 из '*'  |
 
-*[Место для скриншота результата работы программы]*
+<img width="275" height="85" alt="image" src="https://github.com/user-attachments/assets/4da669e5-63bc-484e-acf3-23c0c7257330" />
+
 
 ## Задача 9
 
@@ -361,9 +378,9 @@
 Необходимо реализовать функцию таким образом, чтобы она выводила на экран треугольник из символов '*' у которого x символов в высоту, а количество символов в ряду совпадает с номером строки, при этом треугольник выровнен по правому краю.
 Подсказка: перед символами '*' следует выводить необходимое количество пробелов.
 Пример 1: x = 3 результат: 
-  *
- **
-***
+-  *
+- **
+-***
 
 ### Алгоритм решения
 1. Принять целое число `x` (высоту).
@@ -378,7 +395,8 @@
 | 3              | Треугольник высотой 3      |
 | 4              | Треугольник высотой 4      |
 
-*[Место для скриншота результата работы программы]*
+<img width="271" height="115" alt="image" src="https://github.com/user-attachments/assets/f5d663b2-baec-4b16-b5ee-1772f0c6a2aa" />
+
 
 # Задание 4
 
@@ -401,7 +419,8 @@
 | [1,2,3,4,2,2,5], 2         | 1                   |
 | [1,2,3,4,5], 6             | -1                  |
 
-*[Место для скриншота результата работы программы]*
+<img width="308" height="326" alt="image" src="https://github.com/user-attachments/assets/6348055c-25dc-4da3-a018-3fa645e37fed" />
+
 
 ## Задача 3
 
@@ -423,7 +442,10 @@
 | [1, -2, -7, 4, 2, 2, 5]     | -7                  |
 | [10, -5, 3]                 | 10                  |
 
-*[Место для скриншота результата работы программы]*
+<img width="296" height="37" alt="image" src="https://github.com/user-attachments/assets/59bf74a3-6adc-4bb0-9264-5cacda7d8c72" />
+<br/>
+<img width="294" height="56" alt="image" src="https://github.com/user-attachments/assets/5d4e10c3-5f89-4771-9919-ee65d0247f9d" />
+
 
 ## Задача 5
 
@@ -446,7 +468,10 @@
 | [1,2,3,4,5], [7,8,9], 3        | [1,2,3,7,8,9,4,5]      |
 | [1,2], [3], 0                  | [3,1,2]                |
 
-*[Место для скриншота результата работы программы]*
+<img width="260" height="41" alt="image" src="https://github.com/user-attachments/assets/10f386c5-9583-47a7-b947-80521d3fb6cf" />
+<br/>
+<img width="307" height="149" alt="image" src="https://github.com/user-attachments/assets/e318633e-c484-41ee-9fa9-be95df514eb0" />
+
 
 ## Задача 7
 
@@ -467,7 +492,10 @@
 | [1, 2, 3, 4, 5]         | [5, 4, 3, 2, 1]     |
 | [1, 2]                  | [2, 1]              |
 
-*[Место для скриншота результата работы программы]*
+<img width="338" height="41" alt="image" src="https://github.com/user-attachments/assets/a322d3c3-61a8-4440-9847-e8eed0689a4e" />
+<br/>
+<img width="353" height="47" alt="image" src="https://github.com/user-attachments/assets/106807e9-8f8f-4c26-968d-5307d597904d" />
+
 
 ## Задача 9
 
@@ -490,4 +518,7 @@
 | [1,2,3,4,5], 6             | [] (пустой массив)  |
 | [5,5,5], 5                 | [0, 1, 2]           |
 
-*[Место для скриншота результата работы программы]*
+<img width="321" height="40" alt="image" src="https://github.com/user-attachments/assets/748ebc2b-18b9-455f-81ff-3af2cdf459fe" />
+<br/>
+<img width="275" height="62" alt="image" src="https://github.com/user-attachments/assets/4d19c6e1-7267-43bb-9c1d-6ed3076b0acd" />
+
