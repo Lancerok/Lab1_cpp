@@ -1,7 +1,3 @@
-// Лабораторная работа №1. Процедурное программирование.
-// Студент: Сальников М.А., группа ИТ-5
-// Вариант: Нечетные номера задач (1, 3, 5, 7, 9)
-
 #include <iostream>
 #include <string>
 #include <cmath>
@@ -13,54 +9,50 @@ using std::cin;
 using std::endl;
 using std::string;
 
-// ============================================================================
 // ЗАДАНИЕ 1. МЕТОДЫ
-// ============================================================================
 
-double fraction(double x) {
+double Fraction(double x) {
     return x - static_cast<int>(x);
 }
 
-int charToNum(char x) {
-    return x - '0';
+int CharToNum(char x) {
+    return x - 48;
 }
 
-bool is2Digits(int x) {
+bool Is2Digits(int x) {
     return (x >= 10 && x <= 99) || (x <= -10 && x >= -99);
 }
 
-bool isInRange(int a, int b, int num) {
+bool IsInRange(int a, int b, int num) {
     int min_val = (a < b) ? a : b;
     int max_val = (a > b) ? a : b;
     return num >= min_val && num <= max_val;
 }
 
-bool isEqual(int a, int b, int c) {
+bool IsEqual(int a, int b, int c) {
     return a == b && b == c;
 }
 
-// ============================================================================
 // ЗАДАНИЕ 2. УСЛОВИЯ
-// ============================================================================
 
-int absVal(int x) {
+int AbsVal(int x) {
     return (x < 0) ? -x : x;
 }
 
-bool is35(int x) {
+bool Is35(int x) {
     bool div3 = (x % 3 == 0);
     bool div5 = (x % 5 == 0);
     return (div3 || div5) && !(div3 && div5);
 }
 
-int max3(int x, int y, int z) {
+int Max3(int x, int y, int z) {
     int max_val = x;
     if (y > max_val) max_val = y;
     if (z > max_val) max_val = z;
     return max_val;
 }
 
-int sum2(int x, int y) {
+int Sum2(int x, int y) {
     int sum = x + y;
     if (sum >= 10 && sum <= 19) {
         return 20;
@@ -68,7 +60,7 @@ int sum2(int x, int y) {
     return sum;
 }
 
-string day(int x) {
+string Day(int x) {
     switch (x) {
     case 1: return "понедельник";
     case 2: return "вторник";
@@ -81,11 +73,9 @@ string day(int x) {
     }
 }
 
-// ============================================================================
 // ЗАДАНИЕ 3. ЦИКЛЫ
-// ============================================================================
 
-string listNums(int x) {
+string ListNums(int x) {
     string result;
     for (int i = 0; i <= x; ++i) {
         result += std::to_string(i);
@@ -94,7 +84,7 @@ string listNums(int x) {
     return result;
 }
 
-string chet(int x) {
+string Chet(int x) {
     string result;
     for (int i = 0; i <= x; i += 2) {
         result += std::to_string(i);
@@ -103,7 +93,7 @@ string chet(int x) {
     return result;
 }
 
-int numLen(long x) {
+int NumLen(long x) {
     if (x == 0) return 1;
     int len = 0;
     long temp = (x < 0) ? -x : x;
@@ -114,14 +104,14 @@ int numLen(long x) {
     return len;
 }
 
-void square(int x) {
+void Square(int x) {
     for (int i = 0; i < x; ++i) {
         for (int j = 0; j < x; ++j) cout << "*";
         cout << endl;
     }
 }
 
-void rightTriangle(int x) {
+void RightTriangle(int x) {
     for (int i = 1; i <= x; ++i) {
         for (int j = 0; j < x - i; ++j) cout << " ";
         for (int j = 0; j < i; ++j) cout << "*";
@@ -129,28 +119,25 @@ void rightTriangle(int x) {
     }
 }
 
-// ============================================================================
 // ЗАДАНИЕ 4. МАССИВЫ
-// (Добавлен параметр size, так как в C++ размер сырого массива неизвестен)
-// ============================================================================
 
-int findFirst(const int arr[], int size, int x) {
+int FindFirst(const int* arr, int size, int x) {
     for (int i = 0; i < size; ++i) {
         if (arr[i] == x) return i;
     }
     return -1;
 }
 
-int maxAbs(const int arr[], int size) {
+int MaxAbs(const int arr[], int size) {
     int max_val = arr[0];
     for (int i = 1; i < size; ++i) {
-        if (absVal(arr[i]) > absVal(max_val)) max_val = arr[i];
+        if (AbsVal(arr[i]) > AbsVal(max_val)) max_val = arr[i];
     }
     return max_val;
 }
 
-int* addArray(const int arr[], int arr_size, const int ins[], int ins_size,
-    int pos, int& new_size) {
+int* AddArray(const int* arr, int arr_size, const int* ins, int ins_size,
+                int pos, int& new_size) {
     new_size = arr_size + ins_size;
     int* result = new int[new_size];
     int idx = 0;
@@ -160,14 +147,14 @@ int* addArray(const int arr[], int arr_size, const int ins[], int ins_size,
     return result;
 }
 
-int* reverseBack(const int arr[], int size, int& new_size) {
+int* ReverseBack(const int arr[], int size, int& new_size) {
     new_size = size;
     int* result = new int[size];
     for (int i = 0; i < size; ++i) result[i] = arr[size - 1 - i];
     return result;
 }
 
-int* findAll(const int arr[], int size, int x, int& count) {
+int* FindAll(const int arr[], int size, int x, int& count) {
     count = 0;
     for (int i = 0; i < size; ++i) {
         if (arr[i] == x) ++count;
@@ -180,11 +167,9 @@ int* findAll(const int arr[], int size, int x, int& count) {
     return result;
 }
 
-// ============================================================================
 // ВСПОМОГАТЕЛЬНЫЕ ФУНКЦИИ
-// ============================================================================
 
-int getValidInt(const string& prompt, int min_val, int max_val) {
+int GetValidInt(const string& prompt, int min_val, int max_val) {
     int value;
     while (true) {
         cout << prompt;
@@ -203,57 +188,85 @@ int getValidInt(const string& prompt, int min_val, int max_val) {
     }
 }
 
-void printSeparator() {
+void PrintSeparator() {
     cout << "\n========================================\n";
 }
 
-// ============================================================================
-// ПОДМЕНЮ ДЛЯ КАЖДОГО ЗАДАНИЯ
-// ============================================================================
+int* InputArray(int& size) {
+    cout << "Введите размер массива: ";
+    size = GetValidInt("", 1, 1000);  // Ограничим разумным максимумом
 
-void menuTask1() {
+    int* arr = new int[size];
+    cout << "Введите " << size << " элементов массива:\n";
+    for (int i = 0; i < size; ++i) {
+        cout << "arr[" << i << "] = ";
+        cin >> arr[i];
+    }
+
+    return arr;
+}
+
+void PrintArray(const int arr[], int size) {
+    cout << "[";
+    for (int i = 0; i < size; ++i) {
+        cout << arr[i];
+        if (i < size - 1) cout << ", ";
+    }
+    cout << "]\n";
+}
+
+// ПОДМЕНЮ
+
+void MenuTask1() {
     int choice;
     do {
-        printSeparator();
+        PrintSeparator();
         cout << "ЗАДАНИЕ 1. МЕТОДЫ\n";
         cout << "1. Дробная часть\n3. Букву в число\n5. Двузначное\n";
         cout << "7. Диапазон\n9. Равенство\n0. Назад в главное меню\n";
-        choice = getValidInt("Выберите задачу (0, 1, 3, 5, 7, 9): ", 0, 9);
+        choice = GetValidInt("Выберите задачу (0, 1, 3, 5, 7, 9): ", 0, 9);
+        cout << "\n";
 
         switch (choice) {
         case 1: {
-            double x;
+            double x_frac;
             cout << "Введите вещественное число: ";
-            cin >> x;
-            cout << "Дробная часть: " << fraction(x) << endl;
+            cin >> x_frac;
+            cout << "Дробная часть: " << Fraction(x_frac) << endl;
             break;
         }
         case 3: {
             char ch;
             cout << "Введите символ цифры ('0'-'9'): ";
             cin >> ch;
-            cout << "Число: " << charToNum(ch) << endl;
+            cout << "Число: " << CharToNum(ch) << endl;
             break;
         }
         case 5: {
-            int x;
+            int x_digits;
             cout << "Введите целое число: ";
-            cin >> x;
-            cout << "Двузначное? " << (is2Digits(x) ? "Да" : "Нет") << endl;
+            cin >> x_digits;
+            cout << "Результат: "
+                << (Is2Digits(x_digits) ? "true" : "false") << endl;
             break;
         }
         case 7: {
             int a, b, num;
-            cout << "Введите a, b и num: ";
-            cin >> a >> b >> num;
-            cout << "Входит в диапазон? " << (isInRange(a, b, num) ? "Да" : "Нет") << endl;
+            cout << "Введите a: ";
+            cin >> a;
+            cout << "Введите b: ";
+            cin >> b;
+            cout << "Введите num: ";
+            cin >> num;
+            cout << "Результат: "
+                << (IsInRange(a, b, num) ? "true" : "false") << endl;
             break;
         }
         case 9: {
             int a, b, c;
             cout << "Введите a, b и c: ";
             cin >> a >> b >> c;
-            cout << "Все равны? " << (isEqual(a, b, c) ? "Да" : "Нет") << endl;
+            cout << "Результат: " << (IsEqual(a, b, c) ? "true" : "false") << endl;
             break;
         }
         case 0: break;
@@ -262,50 +275,51 @@ void menuTask1() {
     } while (choice != 0);
 }
 
-void menuTask2() {
+void MenuTask2() {
     int choice;
     do {
-        printSeparator();
+        PrintSeparator();
         cout << "ЗАДАНИЕ 2. УСЛОВИЯ\n";
         cout << "1. Модуль числа\n3. Тридцать пять\n5. Тройной максимум\n";
         cout << "7. Двойная сумма\n9. День недели\n0. Назад в главное меню\n";
-        choice = getValidInt("Выберите задачу (0, 1, 3, 5, 7, 9): ", 0, 9);
+        choice = GetValidInt("Выберите задачу (0, 1, 3, 5, 7, 9): ", 0, 9);
+        cout << "\n";
 
         switch (choice) {
         case 1: {
-            int x;
+            int x_abs;
             cout << "Введите число: ";
-            cin >> x;
-            cout << "Модуль: " << absVal(x) << endl;
+            cin >> x_abs;
+            cout << "Результат: " << AbsVal(x_abs) << endl;
             break;
         }
         case 3: {
             int x;
             cout << "Введите число: ";
             cin >> x;
-            cout << "Делится на 3 или 5 (но не на оба)? "
-                << (is35(x) ? "Да" : "Нет") << endl;
+            cout << "Результат: "
+                << (Is35(x) ? "true" : "false") << endl;
             break;
         }
         case 5: {
             int x, y, z;
             cout << "Введите три числа: ";
             cin >> x >> y >> z;
-            cout << "Максимум: " << max3(x, y, z) << endl;
+            cout << "Результат: " << Max3(x, y, z) << endl;
             break;
         }
         case 7: {
             int x, y;
             cout << "Введите два числа: ";
             cin >> x >> y;
-            cout << "Сумма (с правилом 10-19): " << sum2(x, y) << endl;
+            cout << "Результат: " << Sum2(x, y) << endl;
             break;
         }
         case 9: {
             int x;
             cout << "Введите номер дня (1-7): ";
             cin >> x;
-            cout << "День: " << day(x) << endl;
+            cout << "Результат: " << Day(x) << endl;
             break;
         }
         case 0: break;
@@ -314,49 +328,50 @@ void menuTask2() {
     } while (choice != 0);
 }
 
-void menuTask3() {
+void MenuTask3() {
     int choice;
     do {
-        printSeparator();
+        PrintSeparator();
         cout << "ЗАДАНИЕ 3. ЦИКЛЫ\n";
         cout << "1. Числа подряд\n3. Четные числа\n5. Длина числа\n";
         cout << "7. Квадрат\n9. Правый треугольник\n0. Назад в главное меню\n";
-        choice = getValidInt("Выберите задачу (0, 1, 3, 5, 7, 9): ", 0, 9);
+        choice = GetValidInt("Выберите задачу (0, 1, 3, 5, 7, 9): ", 0, 9);
+        cout << "\n";
 
         switch (choice) {
         case 1: {
             int x;
             cout << "Введите число: ";
             cin >> x;
-            cout << "Результат: " << listNums(x) << endl;
+            cout << "Результат: " << ListNums(x) << endl;
             break;
         }
         case 3: {
             int x;
             cout << "Введите число: ";
             cin >> x;
-            cout << "Результат: " << chet(x) << endl;
+            cout << "Результат: " << Chet(x) << endl;
             break;
         }
         case 5: {
             long x;
             cout << "Введите число: ";
             cin >> x;
-            cout << "Длина числа: " << numLen(x) << endl;
+            cout << "Длина числа: " << NumLen(x) << endl;
             break;
         }
         case 7: {
             int x;
             cout << "Введите размер квадрата: ";
             cin >> x;
-            square(x);
+            Square(x);
             break;
         }
         case 9: {
             int x;
             cout << "Введите высоту треугольника: ";
             cin >> x;
-            rightTriangle(x);
+            RightTriangle(x);
             break;
         }
         case 0: break;
@@ -365,73 +380,121 @@ void menuTask3() {
     } while (choice != 0);
 }
 
-void menuTask4() {
-    // Тестовый массив для демонстрации (чтобы не вводить его каждый раз)
-    const int kTestSize = 7;
-    int test_arr[kTestSize] = { 1, 2, -7, 4, 2, 2, 5 };
+void MenuTask4() {
+    int* arr = nullptr;
+    int size = 0;
+
+    cout << "\n===== ВВОД МАССИВА =====\n";
+    arr = InputArray(size);
 
     int choice;
     do {
-        printSeparator();
-        cout << "ЗАДАНИЕ 4. МАССИВЫ (Тестовый массив: [1, 2, -7, 4, 2, 2, 5])\n";
-        cout << "1. Поиск первого значения\n3. Поиск максимального по модулю\n";
-        cout << "5. Добавление массива в массив\n7. Возвратный реверс\n";
-        cout << "9. Все вхождения\n0. Назад в главное меню\n";
-        choice = getValidInt("Выберите задачу (0, 1, 3, 5, 7, 9): ", 0, 9);
+        PrintSeparator();
+        cout << "ЗАДАНИЕ 4. МАССИВЫ\n";
+        cout << "Текущий массив: ";
+        PrintArray(arr, size);
+        cout << "\n1. Поиск первого значения\n";
+        cout << "3. Поиск максимального по модулю\n";
+        cout << "5. Добавление массива в массив\n";
+        cout << "7. Возвратный реверс\n";
+        cout << "9. Все вхождения\n";
+        cout << "0. Назад в главное меню\n";
+        choice = GetValidInt("Выберите задачу (0, 1, 3, 5, 7, 9): ", 0, 9);
+        cout << "\n";
 
         switch (choice) {
         case 1: {
             int x;
             cout << "Какое число искать? ";
             cin >> x;
-            cout << "Индекс первого вхождения: " << findFirst(test_arr, kTestSize, x) << endl;
+            int index = FindFirst(arr, size, x);
+            if (index != -1) {
+                cout << "Индекс первого вхождения: " << index << endl;
+            }
+            else {
+                cout << "Число не найдено в массиве\n";
+            }
             break;
         }
         case 3: {
-            cout << "Максимальный по модулю: " << maxAbs(test_arr, kTestSize) << endl;
+            int max_val = MaxAbs(arr, size);
+            cout << "Максимальный по модулю: " << max_val << endl;
             break;
         }
         case 5: {
-            const int kInsSize = 2;
-            int ins_arr[kInsSize] = { 9, 9 };
+            cout << "\nВведите размер вставляемого массива: ";
+            int ins_size = GetValidInt("", 1, 100);
+            int* ins_arr = new int[ins_size];
+            cout << "Введите " << ins_size << " элементов:\n";
+            for (int i = 0; i < ins_size; ++i) {
+                cout << "ins_arr[" << i << "] = ";
+                cin >> ins_arr[i];
+            }
+
+            cout << "Введите позицию вставки (0-" << size << "): ";
+            int pos = GetValidInt("", 0, size);
+
             int new_size;
-            int* res = addArray(test_arr, kTestSize, ins_arr, kInsSize, 3, new_size);
-            cout << "Новый массив: ";
-            for (int i = 0; i < new_size; ++i) cout << res[i] << " ";
-            cout << endl;
-            delete[] res; // Освобождаем память
+            int* res = AddArray(arr, size, ins_arr, ins_size, pos, new_size);
+
+            cout << "Результат: ";
+            PrintArray(res, new_size);
+
+            // Освобождение памяти
+            delete[] arr;
+            delete[] ins_arr;
+            arr = res;
+            size = new_size;
+
             break;
         }
         case 7: {
             int new_size;
-            int* res = reverseBack(test_arr, kTestSize, new_size);
+            int* res = ReverseBack(arr, size, new_size);
             cout << "Перевернутый массив: ";
-            for (int i = 0; i < new_size; ++i) cout << res[i] << " ";
-            cout << endl;
-            delete[] res;
+            PrintArray(res, new_size);
+
+            // Освобождение памяти и замена
+            delete[] arr;
+            arr = res;
+
             break;
         }
         case 9: {
             int x;
             cout << "Какое число искать? ";
             cin >> x;
+
             int count;
-            int* res = findAll(test_arr, kTestSize, x, count);
-            cout << "Индексы вхождений: ";
-            for (int i = 0; i < count; ++i) cout << res[i] << " ";
-            cout << endl;
+            int* res = FindAll(arr, size, x, count);
+
+            if (count > 0) {
+                cout << "Индексы вхождений: ";
+                PrintArray(res, count);
+            }
+            else {
+                cout << "Число не найдено в массиве\n";
+            }
+
             delete[] res;
             break;
         }
-        case 0: break;
-        default: cout << "Пожалуйста, выберите нечетное число или 0.\n";
+        case 0:
+            delete[] arr;  // Освобождаем память при выходе
+            break;
+        default:
+            cout << "Пожалуйста, выберите нечетное число или 0.\n";
+        }
+
+        if (choice != 0) {
+            cout << "\nНажмите Enter, чтобы продолжить...";
+            cin.ignore(10000, '\n');
+            cin.get();
         }
     } while (choice != 0);
 }
 
-// ============================================================================
 // ГЛАВНАЯ ФУНКЦИЯ
-// ============================================================================
 
 int main() {
     setlocale(LC_ALL, "Russian");
@@ -439,7 +502,7 @@ int main() {
 
     int choice;
     do {
-        printSeparator();
+        PrintSeparator();
         cout << "       ЛАБОРАТОРНАЯ РАБОТА №1\n";
         cout << "========================================\n";
         cout << "1. Задание 1: Методы (нечетные)\n";
@@ -449,13 +512,14 @@ int main() {
         cout << "0. Выход из программы\n";
         cout << "========================================\n";
 
-        choice = getValidInt("Выберите раздел (0-4): ", 0, 4);
+        choice = GetValidInt("Выберите раздел (0-4): ", 0, 4);
+        cout << "\n";
 
         switch (choice) {
-        case 1: menuTask1(); break;
-        case 2: menuTask2(); break;
-        case 3: menuTask3(); break;
-        case 4: menuTask4(); break;
+        case 1: MenuTask1(); break;
+        case 2: MenuTask2(); break;
+        case 3: MenuTask3(); break;
+        case 4: MenuTask4(); break;
         case 0: cout << "Программа завершена. Удачи!\n"; break;
         }
     } while (choice != 0);
